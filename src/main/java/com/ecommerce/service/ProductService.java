@@ -12,6 +12,6 @@ public interface ProductService {
 	
 	public Product updateProduct(Product product) throws ProductException;
 	
-	public List<Product> getALlProducts() throws ProductException;
+	public List<Product> getAllProducts() throws ProductException;
 
 }

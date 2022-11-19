@@ -29,7 +29,7 @@ public class Product {
 	@Column(unique = true)
 	private String name;
 	
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToMany
 	private Set<Category> category = new HashSet<>();
 	private Integer quantity;
 	private Double cost;

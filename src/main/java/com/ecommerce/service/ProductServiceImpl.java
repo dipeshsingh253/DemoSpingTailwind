@@ -4,11 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ecommerce.exception.ProductException;
 import com.ecommerce.model.Product;
 import com.ecommerce.repository.ProductRepository;
 
+
+@Service
 public class ProductServiceImpl implements ProductService {
 
 	@Autowired
@@ -39,7 +42,7 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public List<Product> getALlProducts() throws ProductException {
+	public List<Product> getAllProducts() throws ProductException {
 
 		List<Product> products = productRepository.findAll();
 
